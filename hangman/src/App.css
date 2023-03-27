@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* ------------alphabet buttons ---------------*/
+.alphabet-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  align-self: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.alphabet-button {
+  border-radius: 4px;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  border: 5px solid black;
+  background-color: white;
+  font-size: 20px;
+}
+
+.alphabet-button:hover {
+  color: grey;
+  border: 2px solid grey;
+}
+
+.alphabet-button:disabled {
+  color: grey;
+  border: 2px solid grey;
+}
+
+/* ------ word-------- */
+
+.word {
+  letter-spacing: 15px;
+  width: 100%;
+  font-size: 50px;
+}
+
+img {
+  height: 100%;
+}
+
+.img-box {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+  height: 50vh;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.help-box {
+  width: 100px;
+}
+
+.restart-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  width: 100px;
+  gap: 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.restart {
+  height: 40px;
+  width: 100px;
+}
+
+.won {
+  color: green;
+}
+
+.lost {
+  color: rgb(218, 32, 32);
+}
+
+/* ----------- rules ----------------- */
+
+.help-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.pop-up {
+  visibility: hidden;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid black;
+  text-align: left;
+  z-index: 2;
+  position: fixed;
+  left: calc(40% / 2);
+  right: calc(40% / 2);
+  top: 10%;
+  height: auto;
+  padding: 5%;
+}
+
+.pop-up ol li {
+  padding-bottom: 20px;
+}
+
+.show {
+  visibility: visible;
+  animation: fadeIn 0.5s;
+}
+
+.close {
+  margin-left: 95%;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid grey;
+  color: grey;
+  background-color: white;
+  font-size: 8px;
+}
+
+.close:hover, .help-button:hover {
+  background-color: rgb(237, 237, 237);;
+}
+
+.center {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
